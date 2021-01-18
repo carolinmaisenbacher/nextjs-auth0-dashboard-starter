@@ -1,0 +1,54 @@
+{
+  "name": "nextjs-apollo-auth0-starter",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.+(json|css|md)": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@apollo/client": "^3.1.4",
+    "@apollo/react-ssr": "^4.0.0",
+    "@auth0/nextjs-auth0": "^0.16.0",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-link-context": "^1.0.20",
+    "apollo-upload-client": "^14.1.1",
+    "babel-eslint": "^10.1.0",
+    "graphql": "^15.3.0",
+    "graphql-tag": "^2.11.0",
+    "next": "latest",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "license": "NO LICENSE",
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-module-resolver": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.2.13",
+    "prettier": "^2.1.1"
+  }
+}

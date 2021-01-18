@@ -1,0 +1,21 @@
+{
+    "__schema": {
+        "types": [
+            {
+                "kind": "INTERFACE",
+                "name": "Field",
+                "possibleTypes": [
+                    {
+                        "name": "ArrayField"
+                    },
+                    {
+                        "name": "DefaultField"
+                    },
+                    {
+                        "name": "TextField"
+                    }
+                ]
+            }
+        ]
+    }
+}
